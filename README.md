@@ -4,7 +4,7 @@
 ![Defender](https://cdn.mos.cms.futurecdn.net/Q8BL6jhiaPNd9AVd4kaogK-970-80.png.webp)
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-Melody Microsoft Edge Removeris helping you to remove Microsoft Edge.
+Melody Microsoft Edge Remover is helping you to remove Microsoft Edge.
 
 - Removes Microsoft Edge from Windows System.
 - Removes Microsoft Edge Legacy and Microsoft Edge Chromium for Windows 10.
