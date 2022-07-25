@@ -15,12 +15,11 @@ Melody Microsoft Edge Remover is helping you to remove Microsoft Edge.
 
 ## System Requiments
 
- - Windows 10 (all versions)
-- 2MB disk space
+ - Windows 10 (all versions) and Windows 11 (all versions)
 - A system restore point before appling (if don't like the effect of the app).
 
 
 
 ## Apply script application
 
-Just run the app. After successful application, the PC will reboot.
+Just run the terminal file.
