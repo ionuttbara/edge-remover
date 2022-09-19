@@ -9,17 +9,11 @@ Melody Microsoft Edge Remover is helping you to remove Microsoft Edge.
 - Removes Microsoft Edge from Windows System.
 - Removes Microsoft Edge Legacy and Microsoft Edge Chromium for Windows 10.
 
-## Features
-
-- The Fidelity/Melody Technology is used for removing Microsoft Edge System Packages (this will remove Microsoft Edge Legacy UWP)
-
 ## System Requiments
 
  - Windows 10 (all versions) and Windows 11 (all versions)
 - A system restore point before appling (if don't like the effect of the app).
 
-
-
 ## Apply script application
 
-Just run the terminal file.
+Just run the ".bat" file. The file can be found in release section or in the code.
