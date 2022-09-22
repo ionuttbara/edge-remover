@@ -4,7 +4,7 @@ CD /D "%~dp0"
 @title Microsoft Edge Uninstaller (
     echo Checking if launched with administrative permissions
     net session >nul 2>&1
-		#run
+    
     if %errorLevel% == 0 (
         echo Administrative Permissions detected, now creating system restore point
         goto savebackup
