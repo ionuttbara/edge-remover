@@ -1,7 +1,7 @@
 pushd "%CD%"
 CD /D "%~dp0"
 @echo off
-@title Microsoft Edge Uninstaller (with auto create system restore point)
+@title Microsoft Edge Uninstaller (system restore point)
     echo Checking if launched with administrative permissions (Needed to create system restore point)
     net session >nul 2>&1
     
