@@ -1,5 +1,4 @@
-# Melody 
-## Microsoft Edge Remover
+## Edge Remover
 
 ![Defender](https://cdn.mos.cms.futurecdn.net/Q8BL6jhiaPNd9AVd4kaogK-970-80.png.webp)
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
