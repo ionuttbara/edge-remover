@@ -41,7 +41,9 @@ if defined edge_legacy_package_version (
 	) else (
 		echo Microsoft Edge [Legacy/UWP] not found, skipping.
 	)
+	
+		reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\EdgeUpdate" /v "DoNotUpdateToEdgeWithChromium" /t REG_DWORD /d 1
+	
 echo Done. Press any key to exit.
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\EdgeUpdate" /v "DoNotUpdateToEdgeWithChromium" /t REG_DWORD /d 1
 pause >nul
 exit /b
