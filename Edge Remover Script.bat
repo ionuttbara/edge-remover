@@ -6,7 +6,6 @@ cd /d "%ProgramFiles(x86)%\Microsoft"
 for /f "tokens=1 delims=\" %%i in ('dir /B /A:D "%ProgramFiles(x86)%\Microsoft\Edge\Application" ^| find "."') do (set "edge_chromium_package_version=%%i")
 if defined edge_chromium_package_version (
 		echo Removing %edge_chromium_package_version%...
-		EdgeWebView\Application\%edge_chromium_package_version%\Installer\setup.exe --uninstall --force-uninstall --msedgewebview --system-level --verbose-logging
 		Edge\Application\%edge_chromium_package_version%\Installer\setup.exe --uninstall --force-uninstall --msedge --system-level --verbose-logging
 		EdgeCore\%edge_chromium_package_version%\Installer\setup.exe --uninstall --force-uninstall --msedge --system-level --verbose-logging
 	) else (
