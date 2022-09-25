@@ -5,32 +5,31 @@ CD /D "%~dp0"
 
 		::Asks if user wants to make a backup or exit
 		
-		ECHO.
-		ECHO ..................................................
-		ECHO How do you want to start Microsoft Edge Uninstaller?
-		ECHO ..................................................
-		ECHO.
-		ECHO Uninstall Microsoft Edge and create a system restore point (recommended) (q)
-		ECHO Uninstall Microsoft Edge without creating system restore point (w)
-		ECHO Exit Microsoft Edge Uninstaller (e)
-		ECHO.
+		echo.
+		echo ..................................................
+		echo How do you want to start Microsoft Edge Uninstaller?
+		echo ..................................................
+		echo.
+		echo Uninstall Microsoft Edge and create a system restore point (recommended) (q)
+		echo Uninstall Microsoft Edge without creating system restore point (w)
+		echo Exit Microsoft Edge Uninstaller (e)
+		echo.
 
 		set /P M=Type the letter next to your option then press ENTER: 
-		if %M% == q goto startmsub
-		if %M% == w goto startmsu
-		if %M% == e (
-				cls
-				echo Leaving in 3s
-				timeout /t 1 /nobreak >nul 
-				cls
-				echo Leaving in 2s
-				timeout /t 1 /nobreak >nul
-				cls
-				echo Leaving in 1s
-				timeout /t 1 /nobreak >nul
-				exit /b
-				::Countdown
-			)
+		if %M%==q goto startmsub
+		if %M%==w goto startmsu
+		if %M%==e (
+			cls
+			echo Leaving in 3s
+			timeout /t 1 /nobreak >nul 
+			cls
+			echo Leaving in 2s
+			timeout /t 1 /nobreak >nul
+			cls
+			echo Leaving in 1s
+			timeout /t 1 /nobreak >nul
+			exit /b
+		)
 			
 :startmsub
 echo Checking if launched with administrative permissions (Needed to create system restore point)
