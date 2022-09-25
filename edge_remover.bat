@@ -15,21 +15,21 @@ CD /D "%~dp0"
 		ECHO Exit Microsoft Edge Uninstaller (e)
 		ECHO.
 
-		SET /P M=Type the letter next to your option then press ENTER: 
-		IF %M%==q goto startmsub
-		IF %M%==w goto startmsu
-		IF %M%==e (
-			cls
-			echo Leaving in 3s
-			timeout /t 1 /nobreak >nul 
-			cls
-			echo Leaving in 2s
-			timeout /t 1 /nobreak >nul
-			cls
-			echo Leaving in 1s
-			timeout /t 1 /nobreak >nul
-			exit /b
-			::Countdown
+		set /P M=Type the letter next to your option then press ENTER: 
+		if %M% == q goto startmsub
+		if %M% == w goto startmsu
+		if %M% == e (
+				cls
+				echo Leaving in 3s
+				timeout /t 1 /nobreak >nul 
+				cls
+				echo Leaving in 2s
+				timeout /t 1 /nobreak >nul
+				cls
+				echo Leaving in 1s
+				timeout /t 1 /nobreak >nul
+				exit /b
+				::Countdown
 			)
 			
 :startmsub
