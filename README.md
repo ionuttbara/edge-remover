@@ -8,7 +8,7 @@ Microsoft Edge Remover is helping you to remove Microsoft Edge.
 - Removes Microsoft Edge from Windows System.
 - Removes Microsoft Edge Legacy and Microsoft Edge Chromium for Windows 10.
 
-## System Requiments
+## System Requirements
 
  - Windows 10 (all versions) and Windows 11 (all versions)
 - A system restore point before appling (if don't like the effect of the app).
