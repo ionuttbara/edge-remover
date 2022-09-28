@@ -15,4 +15,4 @@ Microsoft Edge Remover is helping you to remove Microsoft Edge.
 
 ## Apply script application
 
-Just run the ".bat" file. The file can be found in release section or in the code.
+Just right click the `edge-remover.bat` file and click "Open as Administrator. The file can be found in release section or in the code.
