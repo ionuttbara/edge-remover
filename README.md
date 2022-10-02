@@ -2,10 +2,7 @@
 ![Logo](https://i.imgur.com/SRMpQhj.png)
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-Microsoft Edge Remover is helping you to remove Microsoft Edge.
-
-- Removes Microsoft Edge from Windows System.
-- Removes Microsoft Edge Legacy and Microsoft Edge Chromium for Windows 10.
+Microsoft Edge Remover is helping you to remove Microsoft Edge Legacy and Chromium in Windows.
 
 ## System Requirements
 
