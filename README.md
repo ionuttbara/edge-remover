@@ -11,8 +11,9 @@ Microsoft Edge Remover is helping you to remove Microsoft Edge.
 ## System Requirements
 
  - Windows 10 (all versions) and Windows 11 (all versions)
-- A system restore point before appling (if don't like the effect of the app).
 
-## Apply script application
+## Using the script
 
-Just right click the `edge-remover.bat` file and click "Open as Administrator. The file can be found in release section or in the code.
+Just right click the `edge-remover.bat` file and click "Open as Administrator". The file can be found in release section or in this repo.
+
+There will be options such as to remove edge with or without restore point etc. Type the letter next to your option and press `Enter` on your keyboard. 
