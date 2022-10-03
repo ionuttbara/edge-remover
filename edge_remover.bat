@@ -1,6 +1,6 @@
+@echo off
 pushd "%CD%"
 CD /D "%~dp0"
-@echo off
 @title Microsoft Edge Uninstaller
 
 		::Asks if user wants to make a backup or exit
