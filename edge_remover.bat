@@ -71,6 +71,7 @@ if defined edge_chromium_package_version (
 		echo Removing %edge_chromium_package_version%...
 		Edge\Application\%edge_chromium_package_version%\Installer\setup.exe --uninstall --force-uninstall --msedge --system-level --verbose-logging
 		EdgeCore\%edge_chromium_package_version%\Installer\setup.exe --uninstall --force-uninstall --msedge --system-level --verbose-logging
+		powershell.exe -Command "Get-AppxPackage *MicrosoftEdge* | Remove-AppxPackage"
 	) else (
 		echo Microsoft Edge [Chromium] not found, skipping.
 	)
@@ -81,7 +82,7 @@ if defined edge_legacy_package_version (
 		reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Component Based Servicing\Packages\%edge_legacy_package_version%" /v Visibility /t REG_DWORD /d 1 /f
 		reg delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Component Based Servicing\Packages\%edge_legacy_package_version%\Owners" /va /f
 		dism /online /Remove-Package /PackageName:%edge_legacy_package_version%
-		powershell.exe -Command "Get-AppxPackage *edge* | Remove-AppxPackage" >nul
+		powershell.exe -Command "Get-AppxPackage *edge* | Remove-AppxPackage"
 	) else (
 		echo Microsoft Edge [Legacy/UWP] not found, skipping.
 	)
