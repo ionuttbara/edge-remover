@@ -4,7 +4,6 @@ CD /D "%~dp0"
 @title Microsoft Edge Uninstaller
 
 		::Asks if user wants to make a backup or exit
-		
 		echo.
 		echo ..................................................
 		echo How do you want to start Microsoft Edge Uninstaller?
@@ -15,13 +14,13 @@ CD /D "%~dp0"
 		echo Exit Microsoft Edge Uninstaller (e)
 		echo.
 
-		set /P M=Type the letter next to your option then press ENTER: 
-		if %M%==q goto startmsub
-		if %M%==w goto startmsu
+		set /P M=Type the letter next to your option then press ENTER:
+		if %M%==q goto startmseb
+		if %M%==w goto startmse
 		if %M%==e (
 			cls
 			echo Leaving in 3s
-			timeout /t 1 /nobreak >nul 
+			timeout /t 1 /nobreak >nul
 			cls
 			echo Leaving in 2s
 			timeout /t 1 /nobreak >nul
@@ -30,11 +29,11 @@ CD /D "%~dp0"
 			timeout /t 1 /nobreak >nul
 			exit /b
 		)
-			
+
 :startmseb
 echo Checking if launched with administrative permissions (Needed to create system restore point)
     net session >nul 2>&1
-    
+
     if %errorLevel% == 0 (
         echo Administrative Permissions detected, now creating system restore point.
         goto savebackup
@@ -43,16 +42,15 @@ echo Checking if launched with administrative permissions (Needed to create syst
         pause
         exit /b
     )
-    
+
 :savebackup
 		cls
 		echo Making backup, please wait!
-		Wmic.exe /Namespace:\\root\default Path SystemRestore Call CreateRestorePoint "This_was_made_by_Edge_Remover_on_%DATE%", 100, 1 
+		Wmic.exe /Namespace:\\root\default Path SystemRestore Call CreateRestorePoint "This_was_made_by_Edge_Remover_on_%DATE%", 100, 1
 		echo Complete!
 :startmse
 	echo Checking if launched with administrative permissions (Needed to create system restore point)
 	net session >nul 2>&1
-    
     if %errorLevel% == 0 (
         echo Administrative Permissions detected, continuing.
         goto startmse2
@@ -61,7 +59,6 @@ echo Checking if launched with administrative permissions (Needed to create syst
         pause
         exit /b
     )
-    
 :startmse2
 echo First trying to uninstall via winget
 winget uninstall -h Microsoft.Edge
