@@ -6,7 +6,7 @@ Microsoft Edge Remover is helping you to remove Microsoft Edge Legacy and Chromi
 
 ## System Requirements
 
- - Windows 10 (all versions) and Windows 11 (all versions)
+ - Windows 10 (all versions) and Windows 11
 
 ## Using the script
 
