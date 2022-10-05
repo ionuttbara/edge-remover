@@ -84,8 +84,18 @@ if defined edge_legacy_package_version (
 		echo Microsoft Edge [Legacy/UWP] not found, skipping.
 	)
 
-	reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\EdgeUpdate" /v "DoNotUpdateToEdgeWithChromium" /t REG_DWORD /d 1
+for /f "tokens=8 delims=\" %%i in ('reg query "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Component Based Servicing\Packages" ^| findstr "Microsoft-Windows-MicrosoftEdgeDevToolsClient-Package" ^| findstr "~~"') do (set "melody_package_name=%%i")
+if defined melody_package_name (
+		echo Removing %melody_package_name%...
+		reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Component Based Servicing\Packages\%melody_package_name%" /v Visibility /t REG_DWORD /d 1 /f
+		reg delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Component Based Servicing\Packages\%melody_package_name%\Owners" /va /f
+		dism /online /Remove-Package /PackageName:%melody_package_name% /NoRestart
+	) else (
+		echo Package not found.
+	)
+
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\EdgeUpdate" /v "DoNotUpdateToEdgeWithChromium" /t REG_DWORD /d 1
 cls
-echo Script has finished, press any key to exit
+echo Script has finished. If you have Microsoft-Edge UWP, you must reboot to take effect. press any key to exit
 pause >nul
 exit /b
