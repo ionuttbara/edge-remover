@@ -61,6 +61,7 @@ echo Checking if launched with administrative permissions (Needed to create syst
     )
 :startmse2
 echo First trying to uninstall via winget
+taskkill /F /IM MicrosoftEdge.exe
 winget uninstall -h Microsoft.Edge
 cd /d "%ProgramFiles(x86)%\Microsoft"
 for /f "tokens=1 delims=\" %%i in ('dir /B /A:D "%ProgramFiles(x86)%\Microsoft\Edge\Application" ^| find "."') do (set "edge_chromium_package_version=%%i")
