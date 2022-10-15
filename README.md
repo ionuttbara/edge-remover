@@ -16,7 +16,7 @@ There will be options such as to remove edge with or without restore point etc. 
 
 ## NOTE:
 If you get the following error:
-`Remove-AppxPackage : Deployment failed with HRESULT: 0x80073CFA, Removal failed. Please contact your software vendor.
+``Remove-AppxPackage : Deployment failed with HRESULT: 0x80073CFA, Removal failed. Please contact your software vendor.
 (Exception from HRESULT: 0x80073CFA)
 error 0x80070032: AppX Deployment Remove operation on package
 Microsoft.MicrosoftEdgeDevToolsClient_1000.22621.1.0_neutral_neutral_8wekyb3d8bbwe from:
@@ -29,6 +29,6 @@ At line:1 char:35
 + Get-AppxPackage *MicrosoftEdge* | Remove-AppxPackage
 +                                   ~~~~~~~~~~~~~~~~~~
     + CategoryInfo          : WriteError: (Microsoft.Micro...l_8wekyb3d8bbwe:String) [Remove-AppxPackage], IOException
-    + FullyQualifiedErrorId : DeploymentError,Microsoft.Windows.Appx.PackageManager.Commands.RemoveAppxPackageCommand`
+    + FullyQualifiedErrorId : DeploymentError,Microsoft.Windows.Appx.PackageManager.Commands.RemoveAppxPackageCommand``
     
 Try [these steps](https://answers.microsoft.com/en-us/windows/forum/all/cant-remove-w10-packages-error-0x80073cfa/c224a864-b604-42b8-a770-57049e0dc50a) mentioned on this Microsoft Issue
