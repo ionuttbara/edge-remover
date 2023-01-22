@@ -19,17 +19,8 @@ CD /D "%~dp0"
 		if %M%==w goto startmse
 		if %M%==e (
 			cls
-			echo Leaving in 3s
-			timeout /t 1 /nobreak >nul
-			cls
-			echo Leaving in 2s
-			timeout /t 1 /nobreak >nul
-			cls
-			echo Leaving in 1s
-			timeout /t 1 /nobreak >nul
+			echo Leaving...
 			exit /b
-		)
-
 :startmseb
 echo Checking if launched with administrative permissions (Needed to create system restore point)
     net session >nul 2>&1
