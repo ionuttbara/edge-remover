@@ -17,6 +17,7 @@ There will be options such as to remove edge with or without restore point etc. 
 
 ## Using the script (GUI Version v2.5)
 Download `` .exe  `` version of script and run. Depend of your version of Windows, Administrator Permission is needed to run to work properly.
-![image](https://user-images.githubusercontent.com/76656855/212618002-482373db-e4f6-4c57-bc3b-faaf4bb8589b.png)
+
+## REMINDER !! UPLOAD IMAGE OF THE APP IN FINAL VERSION OF THE APP!
 
 You have some buttons which will do desired action.
