@@ -1,6 +1,7 @@
 ## Edge Remover
 ![Logo](https://i.imgur.com/SRMpQhj.png)  
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+icon by @WindowsRefundDay
 
 ## Introduction
 Microsoft Edge Remover is a tool designed to help Windows users remove Microsoft Edge Chromium and Edge UWP from their devices. The tool provides two versions for users to choose from: Terminal Version (v1.5) and GUI Version (v2.5). Both versions are easy to use and come with different options for removing Edge, including with or without creating a restore point. The GUI Version (v2.5) also includes argument support for more advanced users. By removing Microsoft Edge, users can free up space on their devices and eliminate any unwanted software.
