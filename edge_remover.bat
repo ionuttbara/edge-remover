@@ -29,7 +29,7 @@ echo Checking if launched with administrative permissions (Needed to create syst
         echo Administrative Permissions detected, now creating system restore point.
         goto savebackup
     ) else (
-        echo Failure: No administrative permissions. Please relaunch with Adnimistrative Permissions to create restore point.
+        echo Failure: No administrative permissions. Please relaunch with Administrative Permissions to create restore point.
         pause
         exit /b
     )
