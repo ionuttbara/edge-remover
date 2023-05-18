@@ -13,7 +13,7 @@ Microsoft Edge Remover is a tool designed to help Windows users remove Microsoft
 
 ## Using the script
 __ATTENTION!__ Before using the script you must check nexr things:
- <li> If you applied EdgeBlocker (Sordum software) before to apply this script, you must disable or undo modifications before to apply the script.
+ <li> If you applied EdgeBlocker (Sordum software) before to apply this script, you must disable or undo modifications before to apply this script.
 
 Run the ``` .exe ``` provided as administrator and wait to remove to have effect.
 
