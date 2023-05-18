@@ -1,6 +1,5 @@
 ## Edge Remover
 ![Logo](https://i.imgur.com/SRMpQhj.png)  
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 icon by @WindowsRefundDay(https://github.com/WindowsRefundDay)
 
 ## Introduction
